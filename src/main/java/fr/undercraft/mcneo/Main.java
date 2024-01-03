@@ -5,14 +5,8 @@ import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
-import cpw.mods.fml.common.eventhandler.SubscribeEvent;
-import cpw.mods.fml.common.registry.GameRegistry;
-import fr.undercraft.mcneo.blocks.door.Acacia_Door;
 import fr.undercraft.mcneo.proxy.CommonProxy;
-import net.minecraft.block.Block;
-import net.minecraft.block.BlockDoor;
-import net.minecraftforge.client.event.RenderGameOverlayEvent;
-import net.minecraftforge.common.MinecraftForge;
+import fr.undercraft.mcneo.util.RegistryHandler;
 
 @Mod(modid = Main.MODID, name = Main.NAME, version = Main.VERSION)
 public class Main {
@@ -36,13 +30,15 @@ public class Main {
     @SidedProxy(clientSide = Main.CLIENT, serverSide = Main.COMMON)
     public static CommonProxy proxy;
 
+    @Mod.EventHandler
+    public void init(FMLInitializationEvent event) {
+        proxy.registerRender();
+        RegistryHandler.registerBlocks();
+    }
 
-    public static final BlockDoor Acacia_Door = new Acacia_Door();
 
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event) {
-        // Register your custom door block
-        GameRegistry.registerBlock(Acacia_Door, "door.AcaciaDoor");
     }
 
 

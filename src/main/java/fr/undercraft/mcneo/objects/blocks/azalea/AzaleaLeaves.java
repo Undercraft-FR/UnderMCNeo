@@ -16,6 +16,7 @@ public class AzaleaLeaves extends Block {
 
     public AzaleaLeaves(String name) {
         super(Material.leaves);
+        this.setStepSound(soundTypeGrass);
         setCreativeTab(CreativeTabs.tabDecorations);
         setBlockName(name);
         setHardness(0.2F);

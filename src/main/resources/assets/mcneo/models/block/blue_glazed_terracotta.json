@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "mcneo:blocks/blue_glazed_terracotta"
+  }
+}

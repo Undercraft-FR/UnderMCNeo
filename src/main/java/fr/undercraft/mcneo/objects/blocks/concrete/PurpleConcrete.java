@@ -11,7 +11,7 @@ public class PurpleConcrete extends Block {
     public PurpleConcrete(String name) {
         super(Material.rock);
         setCreativeTab(CreativeTabs.tabBlock);
-        setBlockTextureName(Main.MODID + ":red_concrete");
+        setBlockTextureName(Main.MODID + ":purple_concrete");
         setBlockName(name);
 
     }

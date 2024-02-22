@@ -7,6 +7,7 @@ import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import fr.undercraft.mcneo.proxy.CommonProxy;
 import fr.undercraft.mcneo.util.RegistryHandler;
+import org.lwjgl.Sys;
 
 @Mod(modid = Main.MODID, name = Main.NAME, version = Main.VERSION)
 public class Main {

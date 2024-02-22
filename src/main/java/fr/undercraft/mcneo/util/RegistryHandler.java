@@ -61,5 +61,10 @@ public class RegistryHandler {
         GameRegistry.registerBlock(BlockInit.yellow_glazed_terracotta, "yellow_glazed_terracotta");
         GameRegistry.registerBlock(BlockInit.deepslate_bricks, "deepslate_bricks");
 
+        // DOOR
+
+        //   GameRegistry.registerItem(BlockInit.itemAcaciaDoor, "item_acaciadoor");
+        //   GameRegistry.registerBlock(BlockInit.acaciaDoor, "acacia_door");
+
     }
 }

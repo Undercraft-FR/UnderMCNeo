@@ -1,5 +1,6 @@
 package fr.undercraft.mcneo.init;
 
+import fr.undercraft.mcneo.Main;
 import fr.undercraft.mcneo.objects.blocks.amethyst.AmethystBlock;
 import fr.undercraft.mcneo.objects.blocks.bamboo.BambooBlock;
 import fr.undercraft.mcneo.objects.blocks.azalea.AzaleaLeaves;
@@ -10,15 +11,22 @@ import fr.undercraft.mcneo.objects.blocks.concrete.powder.*;
 import fr.undercraft.mcneo.objects.blocks.copper.CutCopper;
 import fr.undercraft.mcneo.objects.blocks.deepslate.CobbledDeepslate;
 import fr.undercraft.mcneo.objects.blocks.deepslate.DeepslateBricks;
+import fr.undercraft.mcneo.objects.blocks.acacia.AcaciaDoor;
 import fr.undercraft.mcneo.objects.blocks.glazed.*;
 import fr.undercraft.mcneo.objects.blocks.roche.Calcite;
 import fr.undercraft.mcneo.objects.blocks.deepslate.Deepslate;
+import fr.undercraft.mcneo.objects.items.acacia.ItemAcaciaDoor;
 import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
+import net.minecraft.item.Item;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class BlockInit {
+public class  BlockInit {
+
+// BLOCK
+
     public static List<Block> BLOCKS = new ArrayList<Block>();
     public static final Block amethyst_block = new AmethystBlock("amethyst_block");
     public static final Block azalea_leaves = new AzaleaLeaves("azalea_leaves");
@@ -77,5 +85,9 @@ public class BlockInit {
     public static final Block yellow_glazed_terracotta = new YellowGlazedTerracotta("yellow_glazed_terracotta");
     public static final Block deepslate_bricks = new DeepslateBricks("deepslate_brick");
     public static final Block cobbled_deepslate = new CobbledDeepslate("cobbled_deepslate");
+
+    // DOOR
+  //  public static final Block acaciaDoor = new AcaciaDoor(Material.wood).setBlockName("acacia_door");
+   // public static final Item itemAcaciaDoor = new ItemAcaciaDoor(Material.wood).setUnlocalizedName("itemacaciadoor").setTextureName(Main.MODID + ":acacia_door");
 
 }

@@ -63,8 +63,8 @@ public class RegistryHandler {
 
         // DOOR
 
-        //   GameRegistry.registerItem(BlockInit.itemAcaciaDoor, "item_acaciadoor");
-        //   GameRegistry.registerBlock(BlockInit.acaciaDoor, "acacia_door");
+       //GameRegistry.registerItem(BlockInit.itemAcaciaDoor, "item_acaciadoor");
+       //GameRegistry.registerBlock(BlockInit.acaciaDoor, "acacia_door");
 
     }
 }

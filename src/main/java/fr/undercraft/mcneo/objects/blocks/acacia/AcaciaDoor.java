@@ -2,6 +2,7 @@ package fr.undercraft.mcneo.objects.blocks.acacia;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
+import fr.undercraft.mcneo.Main;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.IconFlipped;
@@ -108,16 +109,14 @@ public class AcaciaDoor extends Block {
     }
 
     @SideOnly(Side.CLIENT)
-    public void registerBlockIcons(IIconRegister p_149651_1_)
+    public void registerBlockIcons(IIconRegister iconRegister)
     {
         this.field_150017_a = new IIcon[2];
         this.field_150016_b = new IIcon[2];
         System.out.println(this.getTextureName() + "_upper");
         System.out.println(this.getTextureName() + "_lower");
-     //   this.field_150017_a[0] = p_149651_1_.registerIcon(this.getTextureName() + "_upper");
-    //    this.field_150016_b[0] = p_149651_1_.registerIcon(this.getTextureName() + "_lower");
-        this.field_150017_a[1] = new IconFlipped(this.field_150017_a[0], true, false);
-        this.field_150016_b[1] = new IconFlipped(this.field_150016_b[0], true, false);
+        this.field_150017_a[0] = new IconFlipped(iconRegister.registerIcon(Main.MODID + ":acacia_door_bottom_lower"), true, false);
+        this.field_150016_b[1] = new IconFlipped(iconRegister.registerIcon(Main.MODID + ":acacia_door_bottom_upper"), true, false);
     }
 
     /**

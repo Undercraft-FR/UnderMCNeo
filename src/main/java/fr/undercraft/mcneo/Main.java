@@ -13,7 +13,7 @@ import org.lwjgl.Sys;
 public class Main {
 
     public static final String MODID = "mcneo";
-    public static final String NAME = "UnderMcNeo";
+    public static final String NAME = "EarthMcNeo";
     public static final String VERSION = "1.0";
 
     public static final String CLIENT = "fr.undercraft.mcneo.proxy.ClientProxy";

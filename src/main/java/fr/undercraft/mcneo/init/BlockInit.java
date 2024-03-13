@@ -13,7 +13,7 @@ import fr.undercraft.mcneo.objects.blocks.deepslate.CobbledDeepslate;
 import fr.undercraft.mcneo.objects.blocks.deepslate.DeepslateBricks;
 import fr.undercraft.mcneo.objects.blocks.acacia.AcaciaDoor;
 import fr.undercraft.mcneo.objects.blocks.glazed.*;
-import fr.undercraft.mcneo.objects.blocks.roche.Calcite;
+import fr.undercraft.mcneo.objects.blocks.calcite.Calcite;
 import fr.undercraft.mcneo.objects.blocks.deepslate.Deepslate;
 import fr.undercraft.mcneo.objects.items.acacia.ItemAcaciaDoor;
 import net.minecraft.block.Block;
@@ -87,7 +87,7 @@ public class  BlockInit {
     public static final Block cobbled_deepslate = new CobbledDeepslate("cobbled_deepslate");
 
     // DOOR
-  //  public static final Block acaciaDoor = new AcaciaDoor(Material.wood).setBlockName("acacia_door");
-   // public static final Item itemAcaciaDoor = new ItemAcaciaDoor(Material.wood).setUnlocalizedName("itemacaciadoor").setTextureName(Main.MODID + ":acacia_door");
+    public static final Block acaciaDoor = new AcaciaDoor(Material.wood).setBlockName("acacia_door");
+   public static final Item itemAcaciaDoor = new ItemAcaciaDoor(Material.wood).setUnlocalizedName("itemacaciadoor").setTextureName(Main.MODID + ":acacia_door");
 
 }
